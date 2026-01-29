@@ -1,0 +1,25 @@
+.foto {
+    float: left;
+    width: 30%;
+}
+
+.perfil {
+    float: right;
+    width: 65%;
+}
+
+.columna-izq {
+    float: left;
+    width: 30%;
+}
+
+.columna-der {
+    float: right;
+    width: 65%;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

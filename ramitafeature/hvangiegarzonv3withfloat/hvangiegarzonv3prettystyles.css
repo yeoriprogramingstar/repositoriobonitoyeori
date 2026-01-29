@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f2, #fff0f7);
+    padding: 40px;
+    color: #4a4a4a;
+}
+
+/*Contenedor*/
+.cv {
+    max-width: 950px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(214, 51, 132, 0.25);
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+/* Tipografía */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 400;
+    color: #ff66b2;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #b30059;
+    border-bottom: 2px solid #ffd1e8;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Listas */
+ul {
+    background: #fff5fa;
+    padding: 15px 25px;
+    border-radius: 15px;
+}
+
+ul li {
+    padding: 6px 0;
+}
+
+/*Fotos mia bien preciosa*/ 
+img {
+    width: 180px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(214, 51, 132, 0.3);
+}
+
+/*Secciones*/
+section {
+    margin-bottom: 30px;
+}
