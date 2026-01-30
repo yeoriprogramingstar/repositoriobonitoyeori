@@ -1,0 +1,15 @@
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.btn {
+  padding: 6px 22px;
+  background-color: #ffb6d5;
+  text-decoration: none;
+  display: inline-block;
+  color: #111;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
