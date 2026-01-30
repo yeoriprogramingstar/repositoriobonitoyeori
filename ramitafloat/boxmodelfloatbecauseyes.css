@@ -1,0 +1,23 @@
+.column {
+    float: left;
+    width: 31.33%;   /* 3 columnas con espacio intermedio */
+    margin-right: 2%; 
+    box-sizing: border-box; /* Importante para que el padding no rompa el ancho */
+}
+
+.column:last-child {
+    margin-right: 0; /* La última columna no necesita margen derecho */
+}
+
+.box {
+    margin-bottom: 15px; /* Separación vertical */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* El Clearfix: evita que el contenedor azul colapse porque sus hijos flotan */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
