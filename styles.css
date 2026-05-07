@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:Playfair Display;
+}
+
+body{ height:100% }
+
+.principalcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3e2723;
+    color: #e6b17a;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 7%;
+    
+}
+
+.navbarcontainer{
+    height: 4rem;
+    width: 91%;
+    position: relative;
+    top: 1rem;
+    background-color: #2a1a13;
+    border-radius: 7px;
+   }
+
+.menu{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     }
+
+.menu a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;}
+
+.herocontainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #6f4e37;
+    align-items: center;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 5%;
+    }
+
+
+.herocontainer h2{
+    position: relative;
+    top: 1vh;}
+
+ .herocontainer button{
+   position: relative;
+    border-radius: 999px;
+    background-color: #e6b17a;
+    width: 28vw;
+    height: 4vh;
+    color: #3e282f;
+    bottom: 5px;}
+
+    .heroimg {
+    border: 2px dashed black;
+    width: 91%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0rem;
+    border-radius: 11px;
+    background-color: #d3a373;
+    color: #3e282f;
+}
+
+.sectionofproducts{
+    display: grid;
+    justify-items: center;
+    background-color: #faf3e7;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    padding: 0%;
+}
+
+.titleofproducts{
+    text-align: center;
+}
+.product {
+    width: 91%;
+    height: 74%;
+    border-radius: 5px;
+    
+}
+
+
+.product2{
+    display: none;
+    width: 91%;
+    height: 74%;
+    border-radius: 5px;
+    
+}
+
+.card{
+    border-bottom: 1px dashed black;
+    background-color: #d3a373;
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+}
+.card p {
+        position: relative;
+        top: 1rem;
+        color: #4c2303;
+
+}
+
+
+.cardcontent h3{
+    color:#4c2303 ;
+}
+
+.cardcontent p{
+    color:#607D8B ;
+}
+
+.cardcontent span{
+    color:#e67e22;
+
+}
+
+.contactus{
+    display: flex;
+    flex-direction: column;
+    background-color: #3e2723;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 10px;
+    height: auto;
+    padding: 23px;
+}
+
+.letter{
+    position: relative;
+    top: 1rem;
+    width: 50%;
+}
+    
+.letter span{display: none;}
+
+
+.message{display:none;}
+.message h3{display: none}
+.message input{display: none}
+
+.lettercontent{ position:relative;
+    top:1rem;
+    }
+
+.lettercontent input{
+    width: 94%;
+    border-radius: 5px;
+}
+.lettercontent button{
+    background-color: #e6b17a;
+    color: #3e2723;
+    border-radius: 999px;
+    width: 4rem;
+    cursor:pointer;
+}
+
+
+.formname input{width:100%;
+                height:auto;
+}
+
+.endcontainer{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-around;
+    align-content: center;
+    background-color: #2a1a13;
+    color: #e6b178;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.links{display: none;}
+
+.network h4{display:none;}
+.network span{display: none;}
+
+/*Responsive*/
+
+@media (min-width:481px){
+
+    .principalcontainer{
+
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 4%;
+        }
+
+    .navbarcontainer{
+        width: 40%;
+        background-color: #3e2723;
+        position: relative;
+        height: auto;
+        left: 4rem;
+        top: 0rem;
+        
+    }
+
+    .menu{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0%;
+    height: auto;
+
+    .menu a{
+        font-size: 18px;
+    }
+
+    .herocontainer{
+        height: 13rem;
+    }
+
+    .sectionofproducts{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 26rem;
+    }
+
+.product2{display:block;}
+
+.contactus{
+        height: auto;
+        padding: 8%
+}
+
+.endcontainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+        padding: 5%;}
+
+.network h4{display:block;}
+
+.network span{display:block;}
+}
+
+
+@media (min-width:1024px){
+
+.principalcontainer{
+
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 4%;
+        width: 103%;
+    }
+
+    .navbarcontainer{
+        width: 84%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+
+
+    .menu{
+
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;}
+
+.herocontainer{
+        width: 103%;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        padding: 5%;
+}
+
+.sectionofproducts{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 3%;
+}
+
+
+.product{
+    width: 100%;
+}
+
+.product2{
+    display: block;
+    width: 100%;
+}
+
+
+.letter span{display: block;}
+}
+
+
+.contactus {
+    display: flex;
+    flex-direction: row;
+    background-color: #3e2723;
+    color: white;
+    width: 103%;
+    max-width: 1200px;
+    margin: 0px auto;
+    gap: 50px;
+    height: auto;
+    padding: 4%;
+}
+
+.lettercontent input{   
+    width: 247%;
+    border-radius: 5px;}
+  
+
+
+.message{display:block;}
+.message h3{display: block;}
+.message input{display: block}
+
+
+
+.endcontainer{
+    width: 103%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3%;
+}
+
+.links{
+    display: block;
+}
+
+.network h4{
+    display: block;
+}
+
+.network span{
+    display: block;
+}
+
+}
